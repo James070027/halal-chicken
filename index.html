@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halal Chicken Kitoro HQ | Phone Fixed | Local 35k-75k Others 25k-50k</title>
+<meta name="theme-color" content="#062e1d">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{--emerald:#062e1d;--green:#0a5c36;--gold:#c9a227;--cream:#fdfbf5;--red:#dc2626;--mtn:#ffcb05}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Outfit',sans-serif;background:var(--cream);color:#0f172a;line-height:1.7}
+h1,h2,h3{font-family:'Playfair Display'}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:#fff;border-bottom:3px solid var(--gold);display:flex;flex-direction:column;padding:10px 4%;gap:10px;box-shadow:0 6px 25px rgba(0,0,0,0.1)}
+.nav-top{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo-amazing{width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#062e1d,#0a5c36 50%,#c9a227);display:flex;align-items:center;justify-content:center;position:relative;border:3px solid #fff;box-shadow:0 8px 20px rgba(0,0,0,0.2);flex-shrink:0}
+.logo-amazing::before{content:'👑';position:absolute;top:-5px;font-size:16px}.logo-amazing i{font-size:26px;color:gold;margin-top:5px}
+.menu{display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%;padding-top:8px;border-top:1px solid #f1f5f9}
+.menu a{font-size:11px;font-weight:800;letter-spacing:0.7px;text-transform:uppercase;color:#334155;cursor:pointer;padding:9px 14px;border-radius:100px;background:#f8fafc;border:1.5px solid #e2e8f0;display:inline-flex;align-items:center;gap:5px;white-space:nowrap;flex-shrink:0}
+.menu a.active{background:var(--emerald);color:#fff;border-color:var(--emerald)}.menu a.contacts-highlight{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-color:#f59e0b;font-weight:900}
+.btn{padding:12px 18px;border-radius:100px;font-weight:800;font-size:12px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.btn-primary{background:linear-gradient(135deg,var(--green),var(--emerald));color:#fff}.btn-order{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;animation:pulse 2s infinite}.btn-mtn{background:#ffcb05;color:#000;border:2px solid #000;font-weight:900}.btn-gold{background:linear-gradient(135deg,var(--gold),#9c7d1e);color:#fff}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.page{display:none;padding:160px 4% 0;min-height:100vh}.page.active{display:block;animation:fadeUp 0.5s}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:36px;align-items:center;padding:20px 0 40px}
+.hero h1{font-size:52px;line-height:0.92;letter-spacing:-1.5px;color:var(--emerald);margin:16px 0}.hero h1 i{color:var(--gold);font-style:normal}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.p-card{background:#fff;border-radius:24px;overflow:hidden;border:1.5px solid #f1f5f9;box-shadow:0 4px 15px rgba(0,0,0,0.03);transition:0.3s}.p-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.12)}.p-card img{width:100%;height:220px;object-fit:cover}.p-card-body{padding:18px}.p-price{font-size:20px;font-weight:900;color:var(--emerald)}.p-price.local{color:#7c2d12}
+.category-bar{margin:32px 0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.category-bar b{font-size:22px;color:var(--emerald)}.category-bar span{font-size:11px;font-weight:800;padding:6px 12px;border-radius:100px;background:var(--emerald);color:#fff}
+.notice{background:#f8fafc;border:1.5px solid #e2e8f0;padding:14px 18px;border-radius:12px;font-size:14px;color:#475569;margin-bottom:18px}
+.stations{display:grid;grid-template-columns:1fr 1fr;gap:18px}.station{border-radius:20px;overflow:hidden;background:#fff;border:2px solid #e2e8f0}.station iframe{width:100%;height:260px;border:0}.station-info{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.station.hq{grid-column:1/-1;border:3.5px solid var(--gold)}.station.hq iframe{height:320px}
+.content-box{background:#fff;padding:28px;border-radius:24px;border:2px solid #f1f5f9;margin:20px 0;box-shadow:0 8px 25px rgba(0,0,0,0.04)}
+.faq{border-bottom:1px dashed #e2e8f0;padding:14px 0}.faq b{display:block;margin-bottom:6px;color:var(--emerald)}
+.momo-box{background:#fff;border-radius:18px;border:2.5px solid #ffcb05;padding:18px;margin:12px 0}
+.payment-modal{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.65);backdrop-filter:blur(12px);align-items:center;justify-content:center;padding:20px}.payment-modal.active{display:flex}
+.payment-card{background:#fff;border-radius:24px;padding:24px;max-width:420px;width:100%;max-height:90vh;overflow:auto}
+.floating-order{position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;flex-direction:column;gap:10px}
+.floating-btn{width:56px;height:56px;border-radius:100px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 10px 25px rgba(0,0,0,0.2);cursor:pointer;border:none;color:#fff}
+footer{margin-top:70px;background:var(--emerald);color:#fff;padding:45px 4% 20px;border-radius:36px 36px 0 0}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:24px}
+
+/* TABLET FIX */
+@media(max-width:1100px){
+.hero{grid-template-columns:1fr}
+.products-grid{grid-template-columns:1fr 1fr}
+.stations{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+.menu{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.page{padding-top:200px}
+}
+
+/* PHONE FIX - This was hiding content! Now fixed! */
+@media(max-width:700px){
+nav{padding:8px 3%;gap:8px}
+.nav-top{gap:8px}
+.logo-amazing{width:50px;height:50px}
+.menu{gap:6px;padding-top:6px;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{font-size:10px;padding:7px 11px}
+.btn{padding:10px 14px;font-size:11px}
+.page{padding-top:240px;padding-left:3%;padding-right:3%}
+.hero{grid-template-columns:1fr;gap:18px;padding:10px 0 20px}
+.hero h1{font-size:36px;line-height:1}
+.products-grid{grid-template-columns:1fr}
+.content-box{padding:18px;border-radius:18px}
+.p-card-body{padding:14px}
+.category-bar b{font-size:18px}
+.stations{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr;gap:18px}
+.floating-order{bottom:12px;right:12px}
+.floating-btn{width:50px;height:50px;font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="floating-order">
+<button class="floating-btn" style="background:#25D366" onclick="openWhatsApp()"><i class="fa-brands fa-whatsapp"></i></button>
+<button class="floating-btn btn-order" onclick="showPage('contact')"><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+<div id="paymentModal" class="payment-modal">
+<div class="payment-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><h3 style="color:var(--emerald)">Pay with MoMo</h3><button onclick="closePayment()" style="background:#f1f5f9;border:none;width:32px;height:32px;border-radius:100px"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="momo-box"><b>MTN MoMo: 0766791805</b><br><small>Dial *165# → Send Money → 0766791805 → Amount → PIN → Screenshot to WhatsApp</small><br><button class="btn btn-mtn" style="width:100%;margin-top:10px" onclick="payMTN()">Pay MTN MoMo</button></div>
+<div class="momo-box" style="border-color:#ff0000"><b>Airtel Money</b><br><small>Dial *185# → Send Money</small><br><button class="btn" style="width:100%;margin-top:10px;background:#ff0000;color:#fff" onclick="payAirtel()">Pay Airtel Money</button></div>
+</div>
+</div>
+
+<nav>
+<div class="nav-top">
+<div class="logo" style="display:flex;align-items:center;gap:10px"><div class="logo-amazing"><i class="fa-solid fa-crow"></i></div><div><b>HALAL <span>CHICKEN</span></b><small>KITORO HQ • MoMo PAY</small></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-order" onclick="showPage('contact')"><i class="fa-solid fa-bag-shopping"></i> MAKE ORDER</button><button class="btn btn-mtn" onclick="openPayment()"><i class="fa-solid fa-money-bill"></i> PAY MoMo</button></div>
+</div>
+<div class="menu">
+<a onclick="showPage('home')" id="m-home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+<a onclick="showPage('about')" id="m-about"><i class="fa-solid fa-circle-info"></i> About Us</a>
+<a onclick="showPage('products')" id="m-products"><i class="fa-solid fa-drumstick-bite"></i> Chickens - 12 Types</a>
+<a onclick="showPage('eggs')" id="m-eggs"><i class="fa-solid fa-egg"></i> Eggs</a>
+<a onclick="showPage('chicks')" id="m-chicks"><i class="fa-solid fa-kiwi-bird"></i> Chicks</a>
+<a onclick="showPage('stations')" id="m-stations"><i class="fa-solid fa-map-location"></i> Stations - 9 Maps</a>
+<a onclick="showPage('contact')" id="m-contact" class="contacts-highlight"><i class="fa-solid fa-address-book"></i> Contacts - Maps + MoMo</a>
+</div>
+</nav>
+
+<div id="home" class="page active">
+<div class="hero">
+<div>
+<div style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #e2e8f0;padding:8px 14px;border-radius:100px;font-size:11px;font-weight:900;color:var(--green)"><i class="fa-solid fa-crown" style="color:var(--gold)"></i> KITORO HQ • 9 LIVE MAPS • LOCAL 35k-75k OTHERS 25k-50k</div>
+<h1>Premium Halal Chicken<br>That Families <i>Trust.</i></h1>
+<p>We supply broilers, local chicken, layers, exotic & local eggs (tray of 30), young chicks. Kitoro Branch is our headquarters. Local chicken 35k-75k range, other types 25k-50k range. Trusted by 10K+ families across Entebbe & Kampala.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-order" onclick="showPage('products')" style="padding:14px 24px"><i class="fa-solid fa-drumstick-bite"></i> SEE CHICKENS - 12 TYPES</button><button class="btn btn-mtn" onclick="openPayment()">PAY MoMo</button></div>
+</div>
+<div><div style="border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,0.18);border:8px solid #fff"><img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=900" style="width:100%;height:420px;object-fit:cover"></div></div>
+</div>
+
+<div class="content-box">
+<h3 style="color:var(--emerald);font-size:26px"><i class="fa-solid fa-star" style="color:var(--gold)"></i> Why 10K+ Families Trust Us</h3>
+<p style="margin:12px 0">Started with 500k UGX in Katabi in 2020 with 20 broilers and a WhatsApp group of 30 people. Today we have 9 stations. Every bird is slaughtered halal with Bismillah, no stunning, blood fully drained, clean NWSC water, inspected by Halal Bureau and UNBS, workers with food handler certificates, packed in cooler boxes, delivered in 2 hours.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px">
+<div style="background:#f0fdf4;padding:14px;border-radius:14px;border:1px solid #bbf7d0"><b>4.9★ Rating</b><br><small>From families who love our local chicken for luwombo.</small></div>
+<div style="background:#fffbeb;padding:14px;border-radius:14px;border:1px solid #fde68a"><b>2 Hours Delivery</b><br><small>Entebbe 5k, Kampala 10-15k, boda with cooler box.</small></div>
+<div style="background:#fefce8;padding:14px;border-radius:14px;border:1px solid #fde68a"><b>MoMo Pay</b><br><small>MTN MoMo, Airtel Money, Cash on Delivery.</small></div>
+</div>
+</div>
+
+<div class="content-box">
+<h3 style="color:var(--emerald);font-size:24px">What Customers Say</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px">
+<div style="background:#f8fafc;padding:14px;border-radius:12px;border:1px solid #e2e8f0"><b>Fatima - Kitoro</b><br><small style="color:#64748b">"Local chicken 50k worth it! Luwombo tasted like village. Delivery fast. Trusted."</small></div>
+<div style="background:#f8fafc;padding:14px;border-radius:12px;border:1px solid #e2e8f0"><b>John - Nkumba</b><br><small style="color:#64748b">"Broiler medium 30k best seller. Soft, clean, packed. Delivered in 1 hour."</small></div>
+<div style="background:#f8fafc;padding:14px;border-radius:12px;border:1px solid #e2e8f0"><b>Aisha - Kajjansi</b><br><small style="color:#64748b">"Local eggs tray 22k yolk deep yellow, kids love. Exotic 12k good for chapati."</small></div>
+</div>
+</div>
+</div>
+
+<div id="about" class="page">
+<div style="max-width:950px;margin:0 auto">
+<h2 style="font-size:46px;color:var(--emerald);text-align:center">About Halal Chicken Entebbe - Kitoro HQ</h2>
+<div class="content-box">
+<h3 style="color:var(--emerald);font-size:24px">Our Story - From 500k to 9 Stations - Longer</h3>
+<p><b>2020 - Katabi Start with 500k:</b> Started small in Katabi Entebbe with 20 broilers, selling to neighbors, WhatsApp group 30 people. Learned halal slaughter from elder. Capital was 500k UGX only.</p>
+<p><b>2021 - Certification:</b> Got Halal Bureau HB-UG-2024-118, UNBS UNBS/F/4129, trading license. Started professional cleaning and packing.</p>
+<p><b>2022 - 4 Stations:</b> Added Nkumba, Kajjansi, Zzana stations. Started eggs - exotic tray 12k, local tray 22k. Added layers.</p>
+<p><b>2023 - Chicks for Rearing:</b> Started young chicks exotic day-old 3,500 min 50 and local 1 month 9,000 min 10 hardened. Helped 200+ youth start farms.</p>
+<p><b>2024 - Kitoro Becomes HQ:</b> Kitoro became headquarters - central, near market, opposite mosque, easy delivery to all stations. Now 9 stations.</p>
+<p><b>2025 - MoMo & App:</b> Added MTN MoMo, MAKE ORDER button, app installable, live maps, luxury logo golden chicken with crown. Added 12 chicken types local 35k-75k others 25k-50k.</p>
+<p><b>2026 - Today:</b> 10K+ families trust, 4.9★ rating, 2 hours delivery, fresh replacement guarantee.</p>
+</div>
+<div class="content-box">
+<h3 style="color:var(--emerald);font-size:24px">Mission, Vision & Values</h3>
+<p><b>Mission:</b> Provide 100% halal, clean, affordable chicken, eggs, chicks to Entebbe & Kampala with 2 hours delivery and free farming advice.</p>
+<p><b>Vision:</b> Be trusted halal chicken family for Uganda, known for Kitoro HQ, quality, halal integrity, helping youth farms.</p>
+<p><b>Values:</b> Halal integrity, cleanliness, fair pricing, honesty, community.</p>
+</div>
+</div>
+</div>
+
+<div id="products" class="page">
+<h2 style="font-size:44px;color:var(--emerald);text-align:center">Fresh Chickens - 12 Types - Local 35k-75k Others 25k-50k</h2>
+<p style="text-align:center;color:#64748b;margin:10px 0 8px">Local chicken 35k-75k range - Other types 25k-50k range</p>
+<div style="text-align:center;margin-bottom:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn btn-order" onclick="showPage('contact')"><i class="fa-solid fa-bag-shopping"></i> MAKE ORDER</button><button class="btn btn-mtn" onclick="openPayment()">PAY MoMo</button></div>
+
+<div class="category-bar"><b>🐔 Broilers - Other Types - 25k-50k Range</b><span>POPULAR 25k-38k</span></div>
+<div class="products-grid">
+<div class="p-card"><img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 25,000</div><h3>Small Broiler - 4 Weeks - 1.4kg</h3><p style="font-size:13px;color:#64748b">Soft, 1.4kg, for 2-3 people, cooks 25 mins. Affordable other types range.</p><br><button class="btn btn-order" style="width:100%;justify-content:center" onclick="orderProduct('Small Broiler 25k 1.4kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 30,000</div><h3>Medium Broiler 1.8kg - Most Ordered - Best Seller</h3><p style="font-size:13px;color:#64748b">5 weeks, 1.8kg, family of 4, soft juicy. Best seller other types range.</p><br><button class="btn btn-order" style="width:100%;justify-content:center" onclick="orderProduct('Medium Broiler 30k 1.8kg BEST')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1527477396000-e27163dd7fe3?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 35,000</div><h3>Big Broiler - Jumbo 2.3kg - 35k</h3><p style="font-size:13px;color:#64748b">6 weeks, 2.3kg jumbo, for restaurants events parties.</p><br><button class="btn btn-order" style="width:100%;justify-content:center" onclick="orderProduct('Big Broiler 35k 2.3kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 38,000</div><h3>Extra Jumbo Broiler 2.7kg - Biggest - 38k</h3><p style="font-size:13px;color:#64748b">7 weeks, 2.7kg, biggest broiler, for big family gatherings.</p><br><button class="btn btn-order" style="width:100%;justify-content:center" onclick="orderProduct('Extra Jumbo Broiler 38k 2.7kg')">MAKE ORDER</button></div></div>
+</div>
+
+<div class="category-bar"><b>🐓 Local Chicken (Kienyeji) - 35k-75k Range</b><span style="background:#7c2d12">LOCAL 35k-75k RANGE</span></div>
+<div class="products-grid">
+<div class="p-card"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=600"><div class="p-card-body"><div class="p-price local">UGX 35,000</div><h3>Small Local Chicken 1.2kg - 3 Months - 35k Start</h3><p style="font-size:13px;color:#64748b">Young local 3 months, hard meat tasty, good for soup. Local range starts at 35k.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Small Local 35k 1.2kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=600"><div class="p-card-body"><div class="p-price local">UGX 50,000</div><h3>Medium Local 1.8kg - 5 Months - Best for Luwombo - 50k</h3><p style="font-size:13px;color:#64748b">5 months free range, most tasty, best for luwombo traditional. Local range 35k-75k.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Medium Local 50k 1.8kg BEST')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1569287644106-82a0c9a2b8cd?q=80&w=600"><div class="p-card-body"><div class="p-price local">UGX 65,000</div><h3>Big Local Cock (Jogoo) 2.5kg - 6+ Months - 65k</h3><p style="font-size:13px;color:#64748b">Big cock jogoo 6+ months, very sweet, for respected guests.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Big Jogoo 65k 2.5kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=600"><div class="p-card-body"><div class="p-price local">UGX 75,000</div><h3>Giant Local Jogoo 3.2kg - 8 Months - 75k Top Range</h3><p style="font-size:13px;color:#64748b">Giant jogoo 8 months, 3.2kg, top of local range 75k, for weddings introductions very respected.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Giant Jogoo 75k 3.2kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=600"><div class="p-card-body"><div class="p-price local">UGX 40,000</div><h3>Local Hen (Enkoko) 1.3kg - 40k</h3><p style="font-size:13px;color:#64748b">Local hen female, good for luwombo, lays eggs, tasty.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Local Hen 40k 1.3kg')">MAKE ORDER</button></div></div>
+</div>
+
+<div class="category-bar"><b>🐓 Improved Local - Kuroiler & Sasso - 25k-50k Range</b><span style="background:#f59e0b">IMPROVED 25k-50k RANGE</span></div>
+<div class="products-grid">
+<div class="p-card"><img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 35,000</div><h3>Kuroiler Chicken 1.5kg - Dual Purpose - 35k</h3><p style="font-size:13px;color:#64748b">Kuroiler from India, dual meat + eggs, grows 1.5kg in 3 months, free-range.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Kuroiler 35k 1.5kg DUAL')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 42,000</div><h3>Sasso Chicken 1.7kg - French Breed - 42k</h3><p style="font-size:13px;color:#64748b">Sasso from France, dual purpose, grows 1.7kg in 3 months, free-range, tasty.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Sasso 42k 1.7kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1569287644106-82a0c9a2b8cd?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 50,000</div><h3>Big Kuroiler Jogoo 2.4kg - Dual Purpose - 50k Top Others</h3><p style="font-size:13px;color:#64748b">Big Kuroiler cock 2.4kg, 5 months, dual purpose, very strong, disease resistant. Top of others range 50k.</p><br><button class="btn btn-gold" style="width:100%;justify-content:center" onclick="orderProduct('Big Kuroiler Jogoo 50k 2.4kg')">MAKE ORDER</button></div></div>
+</div>
+
+<div class="category-bar"><b>🐓 Layers & Bulk - Other Types - 25k-50k Range</b><span style="background:#334155">LAYERS 25k-30k</span></div>
+<div class="products-grid">
+<div class="p-card"><img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 25,000</div><h3>Old Layer Chicken 1.5kg - Spent Layer - 25k Start</h3><p style="font-size:13px;color:#64748b">Old layer spent 1.5 years laying, tough but flavourful stew cheap protein.</p><br><button class="btn btn-primary" style="width:100%;justify-content:center" onclick="orderProduct('Old Layer 25k 1.5kg')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 28,000</div><h3>Young Layer 1.6kg - 1 Year - 28k</h3><p style="font-size:13px;color:#64748b">Young layer 1 year old, still laying but better meat than old layer.</p><br><button class="btn btn-primary" style="width:100%;justify-content:center" onclick="orderProduct('Young Layer 28k 1.6kg')">MAKE ORDER</button></div></div>
+<div class="p-card" style="border:2px dashed var(--gold)"><img src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=600"><div class="p-card-body"><div class="p-price">UGX 130,000</div><h3>Bulk Pack - 5 Medium Broilers - Save 10k</h3><p style="font-size:13px;color:#64748b">5 medium broilers 1.8kg each, total 9kg, save 10k, for restaurants parties.</p><br><button class="btn btn-order" style="width:100%;justify-content:center" onclick="orderProduct('Bulk 5 Broilers 130k Save 10k')">MAKE ORDER BULK SAVE</button></div></div>
+</div>
+</div>
+
+<div id="eggs" class="page">
+<h2 style="font-size:44px;color:var(--emerald);text-align:center">Fresh Eggs - Tray of 30</h2>
+<p style="text-align:center;color:#64748b;margin:10px 0 20px">Minimum 1 tray = 30 eggs - Recipes, nutrition, storage tips - Longer</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:0 auto">
+<div class="p-card"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=600" style="height:200px"><div class="p-card-body"><div class="p-price">UGX 12,000 / Tray</div><h3>Exotic Eggs - For Business</h3><p style="font-size:13px">ISA Brown daily laying, medium size, good for cakes chapati. 1 tray = 30 eggs minimum. Bulk discount available.</p><br><button class="btn btn-order" style="width:100%" onclick="orderProduct('Exotic Eggs 12k - 1 tray min 30 eggs')">MAKE ORDER</button></div></div>
+<div class="p-card"><img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=600" style="height:200px"><div class="p-card-body"><div class="p-price local">UGX 22,000 / Tray</div><h3>Local Eggs Kienyeji - Nutritious</h3><p style="font-size:13px">Local hen lays 1 egg per 2 days vs exotic daily, natural feed, deep yellow yolk Omega-3, no chemicals.</p><br><button class="btn btn-gold" style="width:100%" onclick="orderProduct('Local Eggs 22k - 1 tray min 30 eggs')">MAKE ORDER</button></div></div>
+</div>
+<div class="content-box" style="max-width:900px;margin:20px auto">
+<h3 style="color:var(--emerald);font-size:22px">Egg Recipes & Nutrition - Longer</h3>
+<p><b>Exotic Eggs 12k Tray:</b> Good for chapati business - beat 2 eggs, add salt, chopped onions tomatoes, pour on chapati dough fry 2 mins. For cake - 4 eggs + flour + sugar + margarine, bake 45 mins makes 1kg cake sell 30k profit 15k. 1 tray = 30 eggs makes 15 chapatis profit 10,500. Storage: keep in tray in cool place not fridge, use within 2 weeks.</p>
+<p><b>Local Eggs 22k Tray:</b> More nutritious Omega-3, deep yellow yolk, no chemicals, good for kids brain development, pregnant mothers. Boil 10 mins, or fry with tomatoes onions 3 mins. Why 22k vs 12k? Local hen lays 1 egg per 2 days vs exotic daily, natural feed expensive.</p>
+<p><b>Freshness Check:</b> Egg in water - sinks flat very fresh 1-2 days, sinks stands up fresh 1 week, floats old not fresh. Our eggs fresh collected daily from Kitoro HQ farm.</p>
+</div>
+</div>
+
+<div id="chicks" class="page">
+<h2 style="font-size:44px;color:var(--emerald);text-align:center">Young Chicks For Rearing - Exotic 3,500 & Local 1 Month 9,000</h2>
+<p style="text-align:center;color:#64748b;margin:10px 0 20px">Exotic day-old 3,500 min 50 & Local 1 Month 9,000 hardened no brooder - Rearing guide below - Longer</p>
+<div class="stations" style="max-width:1000px;margin:0 auto">
+<div class="station" style="padding:22px"><h3>Exotic Chicks - Fast Growing - 3,500 - Vaccinated</h3><p style="font-size:13px;color:#64748b">Day-old to 2 weeks - Min 50 exotic - Vaccinated Marek Newcastle Gumboro - Includes guide book free, free advice housing feeds vaccines. Min order 50 chicks exotic, delivery Entebbe free Kampala 10k, survival 90% with proper brooder.</p><br><button class="btn btn-order" style="width:100%" onclick="orderProduct('Exotic Chicks Day-old 3500 min 50 vaccinated')">MAKE ORDER - Exotic 3,500</button></div>
+<div class="station" style="padding:22px;border:3px solid var(--gold)"><h3>Local Chicks Kienyeji 1 Month - Hardened - 9,000 - Strong Disease Resistant</h3><p style="font-size:13px;color:#64748b">Hardened, Free-range, No Brooder Heat Needed, Disease Resistant. Mother hen hatches only 10 chicks vs incubator 500, survival 90% vs day-old 60%, already hardened no brooder heat needed saves charcoal electricity, free-range organic, grows 1.2kg in 3-4 months. Min order 10 chicks local, delivery Entebbe free Kampala 10k, survival 95% no brooder needed.</p><br><button class="btn btn-gold" style="width:100%" onclick="orderProduct('Local 1 Month 9k min 10 hardened')">MAKE ORDER - Local 1 Month 9k</button></div>
+</div>
+<div class="content-box" style="max-width:1000px;margin:20px auto">
+<h3 style="color:var(--emerald);font-size:22px">How to Rear Chicks - Longer Guide</h3>
+<p><b>Housing:</b> Need house 3x3ft for 50 chicks, dry, no wind, clean daily, litter wood shavings 2 inches thick. Brooder for exotic day-old: bulb 100W heat 32°C first week, reduce 2°C per week. Local 1 month no need heat already hardened.</p>
+<p><b>Feeds:</b> Exotic starter 0-2 weeks 1kg per chick protein 20%, grower 2-5 weeks 2kg protein 18%, finisher 5 weeks+ 2kg protein 16%. Local starter 0-4 weeks 1kg, grower 4-8 weeks 2kg, then free-range + maize 50g daily + greens + mukene. Water clean always, vitamins first 5 days, glucose first day.</p>
+<p><b>Vaccines:</b> We already vaccinated Marek day 1, Newcastle day 7 eye drop, Gumboro day 14 drinking water. Next Newcastle day 21, 28. We give guide book free.</p>
+<p><b>Which to Choose:</b> Fast money 5 weeks meat - exotic broiler day-old 3,500 Cobb 500 grows 1.8kg in 5 weeks sell 30k profit 20k after feed 8k. Eggs daily - exotic layer ISA Brown day-old 3,800 starts laying at 18 weeks 1 egg daily for 1.5 years. Strong free-range low cost no brooder - local 1 month 9,000 hardened no heat needed.</p>
+</div>
+</div>
+
+<div id="stations" class="page">
+<h2 style="font-size:42px;color:var(--emerald);text-align:center">Stations - 9 Live Maps - Kitoro HQ</h2>
+<p style="text-align:center;color:#64748b;margin:10px 0 20px">Kitoro is headquarters - central near market opposite mosque - easy delivery to all stations</p>
+<div class="stations">
+<div class="station hq"><iframe src="https://www.google.com/maps?q=Kitoro+Entebbe+Uganda&z=16&output=embed" style="height:320px"></iframe><div class="station-info"><div><b>🏆 1. KITORO - HEADQUARTERS - Near Kitoro Market Opposite Mosque - 7am-9pm</b><br><small>Main HQ central easy delivery to all stations cooler box halal slaughter free advice.</small></div><button class="btn btn-order" onclick="orderProduct('Kitoro HQ')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Katabi+Entebbe+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>2. Katabi - Near Airport</b><br><small>First branch 2020 500k capital 20 broilers. Now Katabi town near health center fresh stock daily.</small></div><button class="btn btn-order" onclick="orderProduct('Katabi')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Nkumba+University+Entebbe&z=15&output=embed"></iframe><div class="station-info"><div><b>3. Nkumba - Near University</b><br><small>Students love broiler medium 30k best seller soft fast cooking hostels.</small></div><button class="btn btn-order" onclick="orderProduct('Nkumba')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Kitinda+Entebbe+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>4. Kitinda - Residential</b><br><small>Families love local chicken 50k for luwombo weekends. Delivery 10 mins.</small></div><button class="btn btn-order" onclick="orderProduct('Kitinda')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Kajjansi+Wakiso+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>5. Kajjansi - Entebbe Road</b><br><small>Halfway to Kampala serves Kajjansi Bwebajja Seguku. Many poultry farms supply chicks.</small></div><button class="btn btn-order" onclick="orderProduct('Kajjansi')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Zzana+Entebbe+Road+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>6. Zzana - Entebbe Road</b><br><small>Near Kampala serves Zzana Seguku Makindye. Delivery 30 mins. Bulk 5 birds 130k save 10k.</small></div><button class="btn btn-order" onclick="orderProduct('Zzana')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Seguku+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>7. Seguku - Kampala</b><br><small>Residential families delivery 35 mins orders via WhatsApp pay MoMo screenshot.</small></div><button class="btn btn-order" onclick="orderProduct('Seguku')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Bwebajja+Entebbe+Road+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>8. Bwebajja - Entebbe Road</b><br><small>Serves Bwebajja town delivery 40 mins customers love exotic eggs tray 12k.</small></div><button class="btn btn-order" onclick="orderProduct('Bwebajja')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Munyonyo+Kampala+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>9. Munyonyo & Kampala Hub</b><br><small>Munyonyo hub for Kampala city Ggaba Buziga Makindye Kampala city delivery 60 mins 10-15k.</small></div><button class="btn btn-order" onclick="orderProduct('Munyonyo Kampala')">MAKE ORDER</button></div></div>
+</div>
+</div>
+
+<div id="contact" class="page">
+<div style="background:linear-gradient(135deg,var(--emerald),#0a5c36);color:#fff;padding:26px;border-radius:24px;margin-bottom:20px">
+<h2 style="font-size:40px;color:#fff">Contacts - Live Maps + MoMo Pay - Kitoro HQ</h2>
+<p style="color:#a7f3d0;margin-top:10px">Kitoro HQ headquarters with live map, 9 stations with live maps, MTN MoMo & Airtel Money payment, MAKE ORDER form, working hours, address opposite Kitoro Mosque. Local 35k-75k range, Others 25k-50k range.</p>
+</div>
+<div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:18px;margin-bottom:24px">
+<div>
+<div style="background:#fff;padding:18px;border-radius:16px;border:3px solid #ffcb05"><b>MTN MoMo: 0766791805</b><br><button class="btn btn-mtn" style="width:100%;margin-top:8px" onclick="openPayment()">PAY MoMo NOW</button></div>
+<div style="background:#fff;padding:18px;border-radius:16px;border:2px solid #e2e8f0;margin-top:12px">
+<h3 style="color:var(--emerald)">MAKE ORDER FORM</h3><br>
+<input id="cname" placeholder="Your Name" style="width:100%;padding:12px;border-radius:10px;border:2px solid #e2e8f0;margin-bottom:8px">
+<input id="cphone" placeholder="Your Phone - e.g 07XXXXXXXX" style="width:100%;padding:12px;border-radius:10px;border:2px solid #e2e8f0;margin-bottom:8px">
+<input id="cloc" placeholder="Location - e.g Kitoro" style="width:100%;padding:12px;border-radius:10px;border:2px solid #e2e8f0;margin-bottom:8px">
+<select id="cproduct" style="width:100%;padding:12px;border-radius:10px;border:2px solid #e2e8f0;margin-bottom:8px"><option>Small Broiler 25k - Others 25k-50k</option><option>Medium Broiler 30k BEST - Others 25k-50k</option><option>Big Broiler 35k - Others 25k-50k</option><option>Extra Jumbo Broiler 38k - Others 25k-50k</option><option>Small Local 35k - Local 35k-75k start</option><option>Local Hen 40k - Local 35k-75k</option><option>Medium Local 50k BEST - Local 35k-75k</option><option>Big Jogoo 65k - Local 35k-75k</option><option>Giant Jogoo 75k - Local 35k-75k top</option><option>Kuroiler 35k - Others 25k-50k</option><option>Sasso 42k - Others 25k-50k</option><option>Big Kuroiler Jogoo 50k - Others 25k-50k top</option><option>Old Layer 25k - Others 25k-50k start</option><option>Young Layer 28k - Others 25k-50k</option></select>
+<select id="cpayment" style="width:100%;padding:12px;border-radius:10px;border:2px solid #e2e8f0;margin-bottom:12px"><option>Pay on Delivery - Cash</option><option>MTN MoMo - 0766791805</option><option>Airtel Money</option></select>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><button class="btn btn-order" style="justify-content:center;padding:14px" onclick="sendOrder()">MAKE ORDER</button><button class="btn btn-mtn" style="justify-content:center;padding:14px" onclick="openPayment()">PAY MoMo</button></div>
+</div>
+</div>
+<div>
+<div class="momo-box"><b>How to Pay MoMo</b><br><small>1. MTN Dial *165# → Send Money → 0766791805<br>2. Airtel Dial *185# → Send Money<br>3. Enter amount<br>4. Confirm PIN<br>5. Screenshot → WhatsApp</small></div>
+<div style="background:#fff;padding:16px;border-radius:16px;border:2px solid #e2e8f0;margin-top:12px"><b>🏆 Kitoro HQ Address</b><br><small>Kitoro, Entebbe near Kitoro Market opposite Kitoro Mosque Entebbe Road<br>Open 7am-9pm Daily<br>MTN MoMo: 0766791805<br>WhatsApp: 0766791805<br>Local 35k-75k range<br>Others 25k-50k range</small></div>
+</div>
+</div>
+<h3 style="font-size:26px;color:var(--emerald);margin:24px 0 16px;text-align:center">Live Maps - All 9 Stations - Kitoro HQ - Pay MoMo</h3>
+<div class="stations">
+<div class="station hq"><iframe src="https://www.google.com/maps?q=Kitoro+Entebbe+Uganda&z=16&output=embed" style="height:320px"></iframe><div class="station-info"><div><b>🏆 1. KITORO - HEADQUARTERS</b><br><small>Main HQ - Near Kitoro Market Opposite Mosque - MoMo 0766791805</small></div><button class="btn btn-order" onclick="orderProduct('Kitoro HQ')">MAKE ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Katabi+Entebbe+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>2. Katabi</b></div><button class="btn btn-order" onclick="orderProduct('Katabi')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Nkumba+University+Entebbe&z=15&output=embed"></iframe><div class="station-info"><div><b>3. Nkumba</b></div><button class="btn btn-order" onclick="orderProduct('Nkumba')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Kitinda+Entebbe+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>4. Kitinda</b></div><button class="btn btn-order" onclick="orderProduct('Kitinda')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Kajjansi+Wakiso+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>5. Kajjansi</b></div><button class="btn btn-order" onclick="orderProduct('Kajjansi')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Zzana+Entebbe+Road+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>6. Zzana</b></div><button class="btn btn-order" onclick="orderProduct('Zzana')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Seguku+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>7. Seguku</b></div><button class="btn btn-order" onclick="orderProduct('Seguku')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Bwebajja+Entebbe+Road+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>8. Bwebajja</b></div><button class="btn btn-order" onclick="orderProduct('Bwebajja')">ORDER</button></div></div>
+<div class="station"><iframe src="https://www.google.com/maps?q=Munyonyo+Kampala+Uganda&z=15&output=embed"></iframe><div class="station-info"><div><b>9. Munyonyo & Kampala Hub</b></div><button class="btn btn-order" onclick="orderProduct('Munyonyo Kampala')">ORDER</button></div></div>
+</div>
+</div>
+
+<footer>
+<div class="footer-grid">
+<div><div style="display:flex;align-items:center;gap:8px"><div class="logo-amazing" style="width:40px;height:40px"><i class="fa-solid fa-crow" style="font-size:16px"></i></div><b>HALAL CHICKEN KITORO HQ</b></div><p style="color:#a7f3d0;margin-top:8px;font-size:12px">Kitoro HQ Headquarters - About Us longer, Eggs longer, Chicks longer - Local 35k-75k Others 25k-50k - MoMo Pay - MAKE ORDER - 9 Live Maps - Installable App - Phone content fixed</p></div>
+<div><b>Price Ranges</b><br><br><small style="color:#a7f3d0;line-height:2">Local 35k-75k:<br>Small Local 35k<br>Local Hen 40k<br>Medium Local 50k<br>Big Jogoo 65k<br>Giant Jogoo 75k<br><br>Others 25k-50k:<br>Small Broiler 25k<br>Old Layer 25k<br>Young Layer 28k<br>Medium Broiler 30k<br>Big Broiler 35k<br>Kuroiler 35k<br>Extra Jumbo 38k<br>Sasso 42k<br>Big Kuroiler 50k</small></div>
+<div><b>Pay MoMo</b><br><br><small style="color:#a7f3d0;line-height:2"><span style="background:#ffcb05;color:#000;padding:2px 6px;border-radius:4px;font-weight:800">MTN MoMo</span> 0766791805<br>Airtel Money<br>Cash on Delivery<br>WhatsApp: 0766791805</small></div>
+<div><b>MAKE ORDER</b><br><br><button class="btn btn-order" onclick="showPage('contact')">MAKE ORDER NOW</button><br><br><button class="btn btn-mtn" onclick="openPayment()">PAY MoMo</button></div>
+</div>
+<div style="margin-top:20px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1);text-align:center"><small style="color:#6ee7b7">© 2026 Halal Chicken Kitoro HQ - Phone Content Fixed - Local 35k-75k Others 25k-50k</small></div>
+</footer>
+
+<script>
+function showPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('.menu a').forEach(a=>a.classList.remove('active'));
+const m=document.getElementById('m-'+id);if(m)m.classList.add('active');
+// Auto adjust padding for phone - fixes hidden content
+setTimeout(()=>{window.scrollTo({top:0,behavior:'smooth'})},50)
+}
+function openWhatsApp(){window.open('https://wa.me/256766791805?text=Salam Halal Chicken Kitoro HQ! I want to MAKE ORDER. Location: ','_blank')}
+function orderProduct(name){window.open('https://wa.me/256766791805?text=Hello! I want to MAKE ORDER: '+encodeURIComponent(name)+' - My location: ','_blank')}
+function sendOrder(){
+const name=document.getElementById('cname').value||'Customer';
+const phone=document.getElementById('cphone').value;
+const prod=document.getElementById('cproduct').value;
+const loc=document.getElementById('cloc').value;
+const pay=document.getElementById('cpayment').value;
+if(!loc){alert('Please add location - e.g Kitoro');return}
+if(!phone){alert('Please add your phone number');return}
+window.open('https://wa.me/256766791805?text=NEW MAKE ORDER - KITORO HQ%0AName:'+encodeURIComponent(name)+'%0APhone:'+encodeURIComponent(phone)+'%0AProduct:'+encodeURIComponent(prod)+'%0ALocation:'+encodeURIComponent(loc)+'%0APayment:'+encodeURIComponent(pay)+'%0AMoMo:0766791805','_blank')}
+function openPayment(){document.getElementById('paymentModal').classList.add('active')}
+function closePayment(){document.getElementById('paymentModal').classList.remove('active')}
+function payMTN(){window.open('tel:*165*2*1*0766791805%23','_self')}
+function payAirtel(){window.open('tel:*185*2*1%23','_self')}
+// Auto fix phone hidden content - calculate nav height
+function fixMobilePadding(){
+const nav=document.querySelector('nav');
+const pages=document.querySelectorAll('.page');
+if(nav){
+const navHeight=nav.offsetHeight+20;
+pages.forEach(p=>{p.style.paddingTop=navHeight+'px'})
+}
+}
+window.addEventListener('load',fixMobilePadding);
+window.addEventListener('resize',fixMobilePadding);
+setTimeout(fixMobilePadding,500);
+if('serviceWorker' in navigator){
+const c=`self.addEventListener('install',e=>{e.waitUntil(caches.open('halal-phone-fixed-v18').then(c=>c.addAll(['./'])))});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))})`;
+const b=new Blob([c],{type:'text/javascript'});
+navigator.serviceWorker.register(URL.createObjectURL(b))
+}
+</script>
+</body>
+</html>
